@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel ="stylesheet" href ="CV_Webstyle.css">
+        <meta charset = "utf-8"/>
+        <title>CV: Naledi Kokoali</title>
+        <meta name = "Curriculum Vitae" content = "Curriculum Vitae of Naledi Kokoali"/> 
+    </head>
+    <body>
+
+    <!--NAVIGATION BAR-->
+        <div class="topnav">
+            <a href="CV_Home.html">Home</a>
+            <a href="CV_Education.html">Education</a>
+            <a class="active" href="CV_Experiences.html">Experiences</a>
+            <a href="CV_Skills.html">Skills</a>
+        </div>
+
+        <h1>Work Experience & Projects</h1>
+
+        <section>
+            <h2 class="collapsible">Previous Work Experience</h2>
+            <div class="content">
+                <p>
+                    <strong>Name of entity:</strong>   Department of Employment & Labour <br/>
+                    <strong>Designations:</strong>      Job Shadowing at the IT Division in Pretoria <br/>
+                    <strong>Former designations:</strong>  None <br/>
+                    <strong>Period of work:</strong>     1 week (17th of June 2024 – 21th of June 2024)
+                </p>
+                <h3>Overview:</h3>
+            <p>Working at the Department of Employment & Labour in Pretoria under the IT & ICT Division to understand how information technology is used in the public sector, especially how the government utilises IT and ICT. During my time there I learnt about the different hierarchies there are with the government and how you can scale up with a background in IT. My time job shadowing was very informative and eye ­opening.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="collapsible">Currrent Project</h2>
+            <div class="content">
+                <h3>Basic 2D Game - May 2025</h3>
+                <p>Learning about developing 2D games. Currently learning through Godot.</p>
+                <div class="video-wrapper">
+                    <video controls>
+                        <source src="GameDemo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>(These screenshots are of a game I am currently working on using Godot.)</p>
+                </div>
+                <p></p>
+            </div>            
+        </section>
+
+        <section>
+            <h2 class="collapsible">Previous Projects</h2>
+            <div class="content">
+                <h3>Chommie Chat - April 2025</h3>
+                <p>An app that supported text messaging with group and individual chats. This was built using Python and deployed on Vercel.</p>
+                
+                <h3>Shufflez Dance Studio - 2024</h3>
+                <p>An information system that would log the dancers, dancers and teachers. And report on payments (outstanding or paid), also tracked what teachers taught which type of dance styles.</p>
+            </div>            
+        </section>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const collapsibles = document.querySelectorAll(".collapsible");
+
+                collapsibles.forEach((collapsible) => {
+                collapsible.addEventListener("click", function () {
+                    const content = this.nextElementSibling;
+                    content.classList.toggle("open");
+                });
+                });
+
+                /*collapsible.addEventListener("click", function () {
+                content.classList.toggle("open");
+                });*/
+            });
+        </script>
+        
+
+        
+    <footer class="cv-footer">
+		<p>&copy; 
+		2025 Naledi Kokoali. All rights reserved.<br/>
+		Thank you for tuning in!!!
+		</p>
+	</footer>
+    </body>
+</html>

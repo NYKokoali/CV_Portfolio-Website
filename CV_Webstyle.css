@@ -1,0 +1,346 @@
+body {
+    background-color: #f2f2f2;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: medium;
+}
+
+body, html {
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bg-color {
+    color: #4C0212;
+}
+
+/*style for the bg-colour*/
+/*.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}*/
+
+.topnav {
+    display: flex;
+    /*justify-content: flex-start;*/
+    flex-wrap: nowrap;
+    background-color: #4D0F28;
+    overflow: auto;
+}
+/*styling the links for nav-bar*/
+.topnav a {
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    white-space: nowrap;
+    margin-left: 4rem;
+}
+/*Change the of links when hovering*/
+.topnav a:hover {
+    background-color: #957A81;
+    color: black;
+}
+/*adding color to current selectted link*/
+.topnav a.active {
+    background-color: #601A3E;
+    color: white;
+}
+/*screeen responsiveness
+@media screen and (max-width: 500px) {
+    .topnav a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}*/
+
+
+/*hero image*/
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("Lavender.gif");
+    height: 50%;
+    /*position of image on all screens*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/*placing text in the midddle of image*/
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+}
+
+
+/*button effect*/
+.button {
+    position: relative;
+    background-color: #4D0F28;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; 
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.9s
+}
+/*aftr effects*/
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.button:hover {
+    background-color: #957A81;
+}
+
+/*Contact Card*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+/*socila media icons*/
+.fa {
+    /*display: inline-flex;
+    justify-content: center;*/
+    align-items: center;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px;
+    padding-top: 1.5rem;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+/* Set a specific color for each brand */
+/* LinkedIn */
+.fa-linkedin {
+  background: #0A66C2;
+  color: white;
+}
+/* Github */
+.fa-github {
+  background: #181717;
+  color: white;
+}
+
+
+/*skills bar*/
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+/* Container for skill bars */
+.container {
+  width: 50%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 5px; /* Add top padding */
+  padding-bottom: 7px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+.html {width: 90%; background-color: #E34F26;} /* HTML Orange */
+.css {width: 80%; background-color: #1572B6;} /* CSS Blue */
+.js {width: 65%; background-color: #F7DF1E;} /* JS Yellow */
+.sql {width: 60%; background-color: #00758F;} /* Azure Blue */
+.java {width: 60%; background-color: #EA2D2E;} /* Java Red/Orange */
+.godot {width: 40%; background-color: #478CBF;} /* Godot Blue */
+.c-sharp {width: 75%; background-color: #68217A;} /* .NET Purple */
+.c-plus {width: 50%; background-color: #00599C;} /* C++ Blue */
+
+/*star icon colour*/
+.bullet {
+    list-style: none;
+    padding: 0;
+}
+.bullet li {
+    margin: 1px 0;
+    /*font-size: 16px;*/
+}
+.bullet i {
+    color: #FFD700;
+    margin-right: 8px;
+
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background-color: #f9f9f9;
+    border-left: 3px solid #957A81;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.content.open {
+  max-height: 500px; /* adjust if needed */
+  padding-top: 10px;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 12px;
+  background-color: #957A81;
+  color: white;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+.collapsible:hover {
+  background-color: #7a1b42;
+}
+
+.styled-list {
+    list-style: none;
+    padding-left: 10px;
+    /*line-height: 0.3;*/
+}
+
+.styled-list li {
+  margin-bottom: 1px;
+}
+
+.styled-list i {
+  margin-right: 1px;
+  color: #4D0F28;
+}
+
+.email-me {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.email-me:hover {
+  background-color: #957A81;
+  color: white;
+  text-decoration: none;
+}
+
+.video-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-wrapper p {
+    margin-top: 10px;
+    color: #444;
+    text-align: center;
+}
+
+
+/*footer section*/
+.cv-footer {
+    background-color: #4D0F28;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.cv-footer a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.cv-footer a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+.thank-photo {
+    text-align: center; /* centers inline elements like image and text */
+    margin-top: 20px;
+}
+
+.thank-photo img {
+    width: 50%;         /* or any size you want */
+    height: 50%;         /* maintain aspect ratio */
+    display: inline-block;
+}
+

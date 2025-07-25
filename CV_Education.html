@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel ="stylesheet" href ="CV_Webstyle.css">
+        <meta charset = "utf-8"/>
+        <title>CV: Naledi Kokoali</title>
+        <meta name = "Curriculum Vitae" content = "Curriculum Vitae of Naledi Kokoali"/> 
+    </head>
+    <body>
+
+    <!--NAVIGATION BAR-->
+        <div class="topnav">
+            <a href="CV_Home.html">Home</a>
+            <a class="active" href="CV_Education.html">Education</a>
+            <a href="CV_Experiences.html">Experiences</a>		
+            <a href="CV_Skills.html">Skills</a>
+        </div>
+
+        <h1>Education & Certifications</h1>
+
+       <section>
+            <h2 class="collapsible">Qualifications</h2>
+            <div class="content">
+                <p><strong>Cisco: Introduction to Cybersecurity - 2024</strong><br/>
+                Completed in 2024, this course provided foundational knowledge in cybersecurity principles and practices.
+                </p>
+                <p><strong>North West University - 2023</strong><br/>
+                Bachelor of Science in Information Technology
+                </p>
+                <p><strong>Eunice Girl's High School - 2018 to 2022</strong><br/>
+                National Senior Certificate / Matric (with full exemption) (2022)                 
+                </p>
+            </div>
+       </section>
+
+        <section>
+            <h2 class="collapsible">Achievements</h2>
+            <div class="content">
+            <p><strong>Academic:</strong></p>
+            <ul class="styled-list">
+                <li><i class="fa fa-graduation-cap"></i> 2023: Enrolled at North West University for BSc IT.</li>
+                <li><i class="fa fa-graduation-cap"></i> 2022: Earned National Senior Certificate at Eunice Girls High School.</li>
+            </ul>
+
+            <p><strong>Service to the Community:</strong></p>
+            <ul class="styled-list">
+                <li><i class="fa fa-book"></i> Head Library Assistant, Excellent Service Award.</li>
+                <li><i class="fa fa-trophy"></i> Full Colours for Library Service.</li>
+                <li><i class="fa fa-user"></i> Named Head Library Assistant, 2022.</li>
+            </ul>
+            </div>
+        </section>
+
+        
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const collapsibles = document.querySelectorAll(".collapsible");
+
+                collapsibles.forEach((collapsible) => {
+                collapsible.addEventListener("click", function () {
+                    const content = this.nextElementSibling;
+                    content.classList.toggle("open");
+                });
+                });
+
+                /*collapsible.addEventListener("click", function () {
+                content.classList.toggle("open");
+                });*/
+            });
+        </script>
+        <!-- Font Awesome Icons (add in <head> or before closing </body>) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+    <footer class="cv-footer">
+		<p>&copy; 
+		2025 Naledi Kokoali. All rights reserved.<br/>
+		Thank you for tuning in!!!
+		</p>
+	</footer>
+    </body>
+</html>
